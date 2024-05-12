@@ -1,0 +1,83 @@
+/* styles.css */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto Mono');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('back.jpg') no-repeat center;
+    background-size: cover;
+    backdrop-filter: blur(100px);
+}
+
+.form-box {
+    position: relative;
+    width: 400px; /* Adjust width as needed */
+    padding: 20px; /* Add padding for better spacing */
+    background: transparent;
+    border: 3px solid white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column; /* Stack input boxes vertically */
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-bottom: 15px; /* Add spacing below the heading */
+}
+
+.inputbox {
+    width: 100%; /* Set input box width to 100% */
+    margin: 10px 0; /* Adjust margin for spacing between input boxes */
+    position: relative;
+}
+
+.inputbox label {
+    color: white;
+    font-size: 1em;
+    margin-bottom: 5px; /* Add spacing between label and input */
+}
+
+.inputbox input {
+    width: 100%; /* Adjust input width to fill the container */
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 15px; /* Adjust padding for better appearance */
+    color: white;
+    border-bottom: 2px solid #ffffff; /* Add white bottom border */
+}
+
+.button-container {
+    width: 100%;
+    margin-top: 20px; /* Add margin between input boxes and button */
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calories Burnt Predictor</title>
+
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="/predict" method="post">
+                    <h2>Calories Burnt Predictor</h2>
+                    <div class="inputbox">
+                        <input type="number" name="age" required>
+                        <label for="age">Age</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" name="height" required>
+                        <label for="height">Height</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" name="weight" required>
+                        <label for="weight">Weight</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" name="duration" required>
+                        <label for="duration">Duration</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" name="heart_rate" required>
+                        <label for="heart_rate">Heart Rate</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <input type="number" name="body_temp" step="any" required>
+                        <label for="body_temp">Body Temperature</label>
+                    </div>
+
+                    <div class="inputbox">
+                        <select name="gender" required>
+                            <option value="0">Male</option>
+                            <option value="1">Female</option>
+                        </select>
+                        <label for="gender">Gender</label>
+                    </div>
+
+                    <button type="submit">Predict</button>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
